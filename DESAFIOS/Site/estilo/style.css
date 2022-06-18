@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body {
+    background-color: rgba(255, 192, 203, 0.733);
+}
+:root{
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive; 
+}
+header {
+    background-image: linear-gradient(to right, pink, rgba(0, 0, 255, 0.199));
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+    color: rgba(0, 0, 255, 0.473);
+    padding: 20px;
+    margin: 5px;
+    margin: auto;
+}
+nav {
+    background-color: rgba(63, 160, 128, 0.527);
+    font-family: var(--fonte-destaque);
+    padding: 5px;
+    margin: 6px;
+}
+main {
+    background-color: rgba(127, 255, 212, 0.473);
+    font-family: var(--fonte-padrao);
+    padding: 30px;
+    margin: 30;
+}
