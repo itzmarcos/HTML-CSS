@@ -1,16 +1,20 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 body {
     background-color: rgba(255, 192, 203, 0.733);
 }
-:root{
-
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive; 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Libre Baskerville', serif;
+    --fonte3: 'Lora', serif;
 }
 header {
-    background-image: linear-gradient(to right, pink, rgba(0, 0, 255, 0.199));
-    font-family: var(--fonte-padrao);
+    background-color: white;
+    font-family: var(--fonte2);
     font-size: 20px;
     color: rgba(0, 0, 255, 0.473);
     padding: 20px;
@@ -18,14 +22,38 @@ header {
     margin: auto;
 }
 nav {
-    background-color: rgba(63, 160, 128, 0.527);
-    font-family: var(--fonte-destaque);
-    padding: 5px;
-    margin: 6px;
+    background-color: yellow;
+    font-family: var(--fonte1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-main {
-    background-color: rgba(127, 255, 212, 0.473);
-    font-family: var(--fonte-padrao);
+section {
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.8vw;
+}
+section.normal {
+    background-image: linear-gradient(to left, pink, white);
     padding: 30px;
-    margin: 30;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.imagem {
+    background-color: blueviolet;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section#img1 {
+    
+    background-image: url('../imagens/tapete.jpg');
+    background-position: center center;
+}
+section#img2 {
+    background-image: url('../imagens/copos.jpg');
+    background-position: center center;
 }
