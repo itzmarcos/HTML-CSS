@@ -12,7 +12,15 @@
         }
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
 
+
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         td, th {
             border: 1px solid black;
@@ -22,31 +30,54 @@
              background-color: gray;
              color: white;
         }
+        td.num {
+            text-align: right;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        div#container {
+            overflow-x: auto;
+        }
 
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td> 45 919 049</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <th>000</th>
-            </tr>
-        </tfoot>
-    </table>
-
+    <div id="container">
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num"> 45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">30 452 623</td>
+                </tr>
+                <tr>
+                    <td>Ceara</td>
+                    <td class="num">20 100 122</td>
+                </tr>
+                <tr>
+                    <td>Rio de janeiro</td>
+                    <td class="num">45 452 642</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <th>000</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
