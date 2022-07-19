@@ -20,10 +20,15 @@ header {
     padding: 20px;
     margin: 5px;
     margin: auto;
+    text-align: center;
+}
+main {
+    margin: 10px;
+    padding: 20px;
 }
 nav {
-    background-color: yellow;
-    font-family: var(--fonte1);
+    background-color: rgba(243, 243, 29, 0.473);
+    font-family: var(--fonte2);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -47,13 +52,4 @@ section.imagem {
     padding: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-section#img1 {
-    
-    background-image: url('../imagens/tapete.jpg');
-    background-position: center center;
-}
-section#img2 {
-    background-image: url('../imagens/copos.jpg');
-    background-position: center center;
 }
